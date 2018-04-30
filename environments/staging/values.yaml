@@ -67,6 +67,8 @@ spark:
   appSecretName: sparkdb-app
   enableDbInit: false
   dbBackupJob: true
+  dbImportJob:
+    IMPORT_URL: gs://midburn-k8s-backups/sparkdb-production-dump-2018-04-30-00-00.sql
   # persistent storage was setup using environments/staging/persistent_storage_migration.sh
   persistentStorageName: sparkdb
 
